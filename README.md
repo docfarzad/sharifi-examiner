@@ -15,7 +15,7 @@
 
 1. Create a MySQL database and import "db.sql" into it. 
 2. Copy the contents of the "htdocs" folder into the root directory of your website (typically "public_html"). 
-3. Create a folder named "files" in the root directory, then change its permission to 755.
+3. Create a folder named "files" in the root directory (next to the 'CSS' folder), then change its permission to 755.
 4. Edit the following 2 files to finalize the installation:
 
 
