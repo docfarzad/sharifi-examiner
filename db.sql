@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: sql310.byethost7.com
--- Generation Time: Mar 09, 2021 at 03:43 PM
+-- Generation Time: Mar 09, 2021 at 04:00 PM
 -- Server version: 5.6.48-88.0
 -- PHP Version: 7.2.22
 
@@ -25,6 +25,73 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `exams`
+--
+
+CREATE TABLE `exams` (
+  `id` int(255) NOT NULL,
+  `shenas` varchar(255) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `soalatesh` varchar(255) DEFAULT NULL,
+  `nomreh` varchar(255) DEFAULT NULL,
+  `visid` varchar(255) DEFAULT NULL,
+  `scope` varchar(255) DEFAULT 'in',
+  `user` varchar(255) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gozineha`
+--
+
+CREATE TABLE `gozineha` (
+  `id` int(255) NOT NULL,
+  `soal` varchar(255) DEFAULT NULL,
+  `matn` text,
+  `dorosti` varchar(255) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ongoingexams`
+--
+
+CREATE TABLE `ongoingexams` (
+  `id` int(255) NOT NULL,
+  `examid` varchar(255) DEFAULT NULL,
+  `vaziats` varchar(255) DEFAULT 'going',
+  `user` varchar(255) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `soal`
+--
+
+CREATE TABLE `soal` (
+  `id` int(255) NOT NULL,
+  `matn` text,
+  `azed` varchar(255) NOT NULL DEFAULT 'n',
+  `user` varchar(255) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `uniqstrings`
+--
+
+CREATE TABLE `uniqstrings` (
+  `id` int(11) NOT NULL,
+  `codestring` varchar(255) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -42,6 +109,37 @@ CREATE TABLE `users` (
 --
 
 --
+-- Indexes for table `exams`
+--
+ALTER TABLE `exams`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `gozineha`
+--
+ALTER TABLE `gozineha`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ongoingexams`
+--
+ALTER TABLE `ongoingexams`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `examid` (`examid`);
+
+--
+-- Indexes for table `soal`
+--
+ALTER TABLE `soal`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `uniqstrings`
+--
+ALTER TABLE `uniqstrings`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -53,6 +151,36 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `exams`
+--
+ALTER TABLE `exams`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=413;
+
+--
+-- AUTO_INCREMENT for table `gozineha`
+--
+ALTER TABLE `gozineha`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=466;
+
+--
+-- AUTO_INCREMENT for table `ongoingexams`
+--
+ALTER TABLE `ongoingexams`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `soal`
+--
+ALTER TABLE `soal`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=131;
+
+--
+-- AUTO_INCREMENT for table `uniqstrings`
+--
+ALTER TABLE `uniqstrings`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=343;
 
 --
 -- AUTO_INCREMENT for table `users`
