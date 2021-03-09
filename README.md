@@ -27,7 +27,7 @@
 
 ###### 	"auth.php":
 - Line 14: for "$con" set the credentials for the connection to your database of choice (where you previously imported "db.sql").
-- Line 51: for "$con" set the credentials for the connection to your database of choice (where you previously imported "db.sql").
+- Line 51: for "$cont" set the credentials for the connection to your database of choice (where you previously imported "db.sql").
 
 **Done! Test the system at the URL you specified for "$base_url". You must register first.**
 
