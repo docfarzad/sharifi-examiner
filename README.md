@@ -29,13 +29,13 @@
 
 
 ###### 	"config.php":
-- Line 4: set "$base_url" to the URL to your website where the examiner is hosted. It must include a slash (/) in the end.
-- Line 5: set "$totalexamsfornewuser" to the number of exams you wish to assign to new users. This is the total number of exams a new user can make.
-- Line 6: for "$con", set the credentials for the connection to your database of choice (where you previously imported "db.sql").
+- [Line 4](https://github.com/docfarzad/sharifi-examiner/blob/f100d4840e795af9015cb9ad396d0107b681bf84/htdocs/config.php#L4 "Line 4"): set "$base_url" to the URL to your website where the examiner is hosted. It must include a slash (/) in the end.
+- [Line 5](https://github.com/docfarzad/sharifi-examiner/blob/f100d4840e795af9015cb9ad396d0107b681bf84/htdocs/config.php#L5 "Line 5"): set "$totalexamsfornewuser" to the number of exams you wish to assign to new users. This is the total number of exams a new user can make.
+- [Line 6](https://github.com/docfarzad/sharifi-examiner/blob/f100d4840e795af9015cb9ad396d0107b681bf84/htdocs/config.php#L6 "Line 6"): for "$con", set the credentials for the connection to your database of choice (where you previously imported "db.sql").
 
 ###### 	"auth.php":
-- Line 14: for "$con", set the credentials for the connection to your database of choice (where you previously imported "db.sql").
-- Line 51: for "$cont", set the credentials for the connection to your database of choice (where you previously imported "db.sql").
+- [Line 14](https://github.com/docfarzad/sharifi-examiner/blob/f100d4840e795af9015cb9ad396d0107b681bf84/htdocs/auth.php#L14 "Line 14"): for "$con", set the credentials for the connection to your database of choice (where you previously imported "db.sql").
+- [Line 51](https://github.com/docfarzad/sharifi-examiner/blob/f100d4840e795af9015cb9ad396d0107b681bf84/htdocs/auth.php#L51 "Line 51"): for "$cont", set the credentials for the connection to your database of choice (where you previously imported "db.sql").
 
 **Done! Test the system at the URL you specified for "$base_url". You must register first.**
 
@@ -45,4 +45,5 @@
 
 ##### **Donate**
 [PayPal](https://www.paypal.me/docfarzad "PayPal")
+
 
