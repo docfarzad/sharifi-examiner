@@ -57,7 +57,7 @@ if($tedademteh > 0){
 
 ?>	
 
-<center><a style="color:green;" href="tarrah.php">سوال جدید</a> - <a href="natayej.php">آزمون ها و نتایج</a> - <a href="azmoonsaz.php" onclick="return confirm('آیا مطمئن هستید؟')"> از سوالات زیر آزمون بساز</a> -  <a style="color:ff7b00;" href="https://me.refinedview.com/?p=62">آموزش کار با سامانه</a> - شما <?php echo $tedademteh; ?> آزمون دارید<br><br><p style="color: grey;">لینک کارنامه:    http://azmoonyarsharifi.byethost7.com/karnameh.php</p></center><hr><br>
+<center><a style="color:green;" href="tarrah.php">سوال جدید</a> - <a href="natayej.php">آزمون ها و نتایج</a> - <a href="azmoonsaz.php" onclick="return confirm('آیا مطمئن هستید؟')"> از سوالات زیر آزمون بساز</a> -  <a style="color:ff7b00;" href="https://me.refinedview.com/?p=62">آموزش کار با سامانه</a> - شما <?php echo $tedademteh; ?> آزمون دارید<br><br><p style="color: grey;">لینک کارنامه:    <?php echo $base_url; ?>karnameh.php</p></center><hr><br>
 <?php
 
 $questionid=$_POST["qid"];
