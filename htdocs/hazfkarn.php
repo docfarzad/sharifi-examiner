@@ -11,6 +11,7 @@ $resulfgdfgtb = mysqli_query($con, $sqlfhfb);
 echo '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">';
 echo '<link rel="stylesheet" href="style.css">';
 echo '<link rel="stylesheet" href="font.css">';
+echo '<link rel="shortcut icon" href="favicon.png">';
 
 echo '<center><font face="IRANSans">فهرست پاک شد و همه کارنامه ها آرشیو شدند<br><br><a href="natayej.php">بازگشت</a></font></center>';
 
