@@ -7,10 +7,10 @@ require_once('funcs.php');
 $activeuser14b = $_COOKIE['username'];
 
 
-
+$base_url_withgetstrf=$base_url . '?az=';
 
 $new_str=$_POST['copyid'];
-$new_str = str_replace('http://azmoonyarsharifi.byethost7.com/?az=', '', $new_str);
+$new_str = str_replace($base_url_withgetstrf, '', $new_str);
 $new_stfinal = str_replace(' ', '', $new_str);
 
 
