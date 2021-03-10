@@ -1,7 +1,7 @@
 <?php
 
 require_once('protect-this.php');
-echo '<meta name="robots" content="noindex">';
+echo '<head><title>پاکسازی کارنامه ها</title></head><meta name="robots" content="noindex">';
 require_once('config.php');
 
 $activeuser14b = $_COOKIE['username'];
