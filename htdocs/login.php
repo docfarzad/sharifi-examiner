@@ -32,6 +32,7 @@ require_once('auth.php');
 	<title>ورود مدیران</title>
 	<meta name="robots" content="noindex">
 	<link rel="stylesheet" href="font.css">
+	<link rel="shortcut icon" href="favicon.png">
 </head>
 <body>
 <?php
