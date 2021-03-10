@@ -31,11 +31,11 @@
 ###### 	"config.php":
 - Line 4: set "$base_url" to the URL to your website where the examiner is hosted. It must include a slash (/) in the end.
 - Line 5: set "$totalexamsfornewuser" to the number of exams you wish to assign to new users. This is the total number of exams a new user can make.
-- Line 6: for "$con" set the credentials for the connection to your database of choice (where you previously imported "db.sql").
+- Line 6: for "$con", set the credentials for the connection to your database of choice (where you previously imported "db.sql").
 
 ###### 	"auth.php":
-- Line 14: for "$con" set the credentials for the connection to your database of choice (where you previously imported "db.sql").
-- Line 51: for "$cont" set the credentials for the connection to your database of choice (where you previously imported "db.sql").
+- Line 14: for "$con", set the credentials for the connection to your database of choice (where you previously imported "db.sql").
+- Line 51: for "$cont", set the credentials for the connection to your database of choice (where you previously imported "db.sql").
 
 **Done! Test the system at the URL you specified for "$base_url". You must register first.**
 
