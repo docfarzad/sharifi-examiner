@@ -7,6 +7,12 @@
 require_once('config.php');
 require_once('funcs.php');
 
+if((strlen(trim($_POST['username']))<=0)||(strlen(trim($_POST['password']))<=0)||(strlen(trim($_POST['email']))<=0)||(str_replace("‌", "", $_POST['email'])==null)||(str_replace("‌", "", $_POST['username'])==null)||(str_replace("‌", "", $_POST['password'])==null)){
+
+$emptycheckerfinalized=1;
+
+
+}
 
 $pass = $_POST["password"];
 $pass = md5($pass);
@@ -26,7 +32,7 @@ $queryreadyw = "SELECT * from users WHERE username='$user'";
 $resultreadyw = mysqli_query($con, $queryreadyw); 
 $soalsallreadyw = mysqli_num_rows($resultreadyw); 
 
-if($soalsallreadyw == 1){
+if(($soalsallreadyw == 1)||($emptycheckerfinalized==1)){
 
     echo '<center>اطلاعات درست وارد نشده یا کاربری از قبل با این نام کاربری موجود است. لطفا مجددا <a href="register.php">ثبت نام کنید</a>.</center>';
     exit();
